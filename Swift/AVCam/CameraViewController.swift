@@ -21,7 +21,8 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //disable sleep timer
+        UIApplication.shared.isIdleTimerDisabled = true
         // Disable the UI. Enable the UI later, if and only if the session starts running.
     
         
