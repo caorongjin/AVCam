@@ -18,6 +18,10 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
     }
 
     // MARK: View Controller Life Cycle
+    override var prefersHomeIndicatorAutoHidden:Bool
+    {
+        return true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
